@@ -17,12 +17,12 @@
 - Execução:    
    <pre><code>npm start</code></pre>
 
-- Vercel   
-    https://cadastrocliente-nodejs-dao-v1-vercel.vercel.app/
-
 - Arquivos em src:
     - index.js - Programa principal com o servidor Express.
     - clientedao.js - Classe de acesso aos dados do banco de dados.
     - clienterecurso.js - Contêm os métodos de acesso aos recursos do banco de dados.
     - dbconfig.js - Contêm as configurações e conexão com o banco de dados.
     - servicos.js - Contêm as rotas aos métodos de acesso ao banco de dados.
+
+- Vercel   
+    https://cadastrocliente-nodejs-dao-v1-vercel.vercel.app/    

@@ -18,7 +18,7 @@ class ClienteDAO {
      * @returns uma lista.
      */
     getLista(){
-        return sql`SELECT clienteId, nome, cpf FROM CLIENTE order by clienteId;`;
+        return sql`SELECT clienteId, nome, cpf FROM cliente ORDER BY clienteId;`;
     }
 
     /**
@@ -28,7 +28,7 @@ class ClienteDAO {
      * @returns Os dados do cliente.
      */
     getCliente(clienteId){
-        return sql`SELECT clienteid, nome, cpf FROM CLIENTE where clienteid = ${clienteId};`;
+        return sql`SELECT clienteid, nome, cpf FROM cliente WHERE clienteid = ${clienteId};`;
     }
 
     /**
@@ -40,7 +40,7 @@ class ClienteDAO {
      * @returns 
      */
     inserir(clienteId, nome, cpf){
-        return sql`INSERT INTO CLIENTE (clienteid, nome, cpf) VALUES (${clienteId}, ${nome}, ${cpf});`;
+        return sql`INSERT INTO cliente (clienteid, nome, cpf) VALUES (${clienteId}, ${nome}, ${cpf});`;
     }
 
     /**
@@ -52,7 +52,7 @@ class ClienteDAO {
      * @returns 
      */
     alterar(clienteId, nome, cpf){
-        return sql`UPDATE CLIENTE SET nome = ${nome}, cpf = ${cpf} WHERE clienteid = ${clienteId};`;
+        return sql`UPDATE cliente SET nome = ${nome}, cpf = ${cpf} WHERE clienteid = ${clienteId};`;
     }
 
     /**
@@ -62,7 +62,7 @@ class ClienteDAO {
      * @returns 
      */
     excluir(clienteId){
-        return sql`DELETE FROM CLIENTE where clienteid = ${clienteId};`;
+        return sql`DELETE FROM cliente WHERE clienteid = ${clienteId};`;
     }
 }
 

@@ -1,7 +1,7 @@
 # Programa servidor API-REST do CRUD de Cliente utilizando Node.js e Vercel Postgres com DAO.
 
-- O projeto foi desenvolvido no VSCodde deve ser chamado cliente_nodejs_dao_v1_vercel.
-- Programa cliente está no projeto "cadastrocliente_reactjs_v1_vercel".
+- O projeto foi desenvolvido no VSCodde deve ser chamado cadastrocliente_nodejs_dao_v1_vercel.
+- Programa cliente está no projeto "cadastrocliente_reactjs_v1_vercel" ou "cadastrocliente_reactjs_bootstrap_v1_vercel".
 - Programa servidor web que cria o webservice na posta 8000.
 - Implementação do serviço utilizando REST e os métodos GET, POST, PUT e DELETE.
 - A pasta src contêm os fontes do projeto.

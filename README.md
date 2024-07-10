@@ -18,7 +18,6 @@
    <pre><code>npm start</code></pre>
 
 - Atualização:
-
    Caso o diretório "node_modules" tenha sido apagado basta executar o comando npm a seguir para recriar a pasta e os arquivos das dependências.
    <pre><code>npm update</code></pre>     
 
@@ -30,4 +29,28 @@
     - servicos.js - Contêm as rotas aos métodos de acesso ao banco de dados.
 
 - Vercel   
-    https://cadastrocliente-nodejs-dao-v1-vercel.vercel.app/    
+    https://cadastrocliente-nodejs-dao-v1-vercel.vercel.app/ 
+
+## Serviços
+    Substitua localhost:8080 pelo endereço do servidor.
+
+- Serviço que retorna via GET a lista de cliente.<br>
+    http://localhost:8000/clientes
+
+- Serviço que retorna via GET um cliente.<br>
+    substitua \<ID\> por um id de um cliente.<br>
+    http://localhost:8000/cliente/<ID\>
+
+- Serviço que insere via POST um cliente.<br>
+    http://localhost:8000/cliente<br>
+    Enviar um JSON com os campos clienteId, nome e cpf.
+    Content-Type: application/json -d {"clienteId":"1", "nome":"Pedro","cpf":"45678912399"}
+
+- Serviço que atualiza via PUT um cliente.<br>
+    http://localhost:8000/cliente<br>
+    Enviar um JSON com os campos clienteId, nome e cpf.
+    Content-Type: application/json -d {"clienteId":"1", "nome":"Pedro","cpf":"45678912399"}    
+    
+- Serviço que exclui via DELETE um cliente.<br>
+    Substitua \<ID\> por um id de um cliente.<br>
+    http://localhost:8000/cliente/<ID\>

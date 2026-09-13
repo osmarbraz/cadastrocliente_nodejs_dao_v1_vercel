@@ -48,4 +48,7 @@ async function createTable(db) {
     }
   }
 
-module.exports = createDbConnection();
+// Inicializa a conexão e criação da tabela
+createDbConnection();  
+
+module.exports = sql;

@@ -4,10 +4,7 @@
 
 // Import das bibliotecas próprias
 // Cria a conexão com o banco de dados utilizado pelo objeto 'sql'
-const db = require("./dbconfig");
-
-// Cria a classe de conexão com o banco de dados
-const { sql } = require ('@vercel/postgres');
+const sql = require("./dbconfig");
 
 // Define a classe ClienteDAO 
 class ClienteDAO {

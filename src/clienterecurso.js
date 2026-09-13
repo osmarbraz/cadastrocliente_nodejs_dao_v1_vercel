@@ -10,7 +10,7 @@ const getLista = async (request, response) => {
     //Cria o objeto DAO para acessar o banco de dados
     const dao = new ClienteDAO();
 
-    const { rows } = await dao.getLista();
+    const rows = await dao.getLista();
 
     response.status(200).json(rows);
  
@@ -23,7 +23,7 @@ const getCliente = async (request, response) => {
     //Cria o objeto DAO para acessar o banco de dados
     const dao = new ClienteDAO();
 
-    const { rows } = await dao.getCliente(clienteId);
+    const rows = await dao.getCliente(clienteId);
 
     response.status(200).json(rows[0]);
 };
@@ -35,7 +35,7 @@ const inserir = async (request, response) => {
     //Cria o objeto DAO para acessar o banco de dados
     const dao = new ClienteDAO();
     
-    const { rows } = await dao.inserir(clienteId, nome, cpf);
+    const rows = await dao.inserir(clienteId, nome, cpf);
 
     response.status(201).json({ message: `Cliente inserido com clienteId: ${clienteId}` })
     
@@ -49,7 +49,7 @@ const alterar = async (request, response) => {
     //Cria o objeto DAO para acessar o banco de dados
     const dao = new ClienteDAO();
 
-    const { rows } = await dao.alterar(clienteId, nome, cpf);
+    const rows = await dao.alterar(clienteId, nome, cpf);
     
     response.status(200).json( { message: `Cliente alterado com clienteId: ${clienteId}` });    
 };
@@ -62,7 +62,7 @@ const excluir = async (request, response) => {
     //Cria o objeto DAO para acessar o banco de dados
     const dao = new ClienteDAO();
 
-    const { rows } = await dao.excluir(clienteId);
+    const rows = await dao.excluir(clienteId);
 
     response.status(200).json( { message: `Cliente excluído com clienteId: ${clienteId}` });
 };

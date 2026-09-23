@@ -36,14 +36,14 @@
 
 ## Vercel   
 
-    https://cadastrocliente-nodejs-dao-v1-vercel.vercel.app/ 
+https://cadastrocliente-nodejs-dao-v1-vercel.vercel.app/ 
 
 ## Serviços
 
     Substitua `localhost:8080` pelo endereço do servidor.
 
 - Serviço que retorna via GET a lista de cliente.<br>
-    http://localhost:8000/clientes
+    `http://localhost:8000/clientes`
 
 - Serviço que retorna via GET um cliente.<br>
     substitua `<ID>` por um id de um cliente.<br>
